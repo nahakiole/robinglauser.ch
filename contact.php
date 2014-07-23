@@ -14,7 +14,7 @@ $app->post('/send', function (Request $request) use ($app) {
             return new Response('This is bad!', 201);
         }
         mail('robin.glauser@gmail.com', 'Feedback from '.$mail, $message);
-        return new Response('Thank you for your feedback!', 201);
+        return new Response('You\'re Awesome', 200);
 });
 
 $app->run();

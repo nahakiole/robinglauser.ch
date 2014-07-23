@@ -45,8 +45,7 @@ $(function(){
         e.preventDefault();
 
 
-        $('.contact-form').slideUp();
-        $('.contact-feedback').slideDown();
+
 
         // Get the form instance
         var $form = $(e.target);
@@ -56,7 +55,11 @@ $(function(){
 
         // Use Ajax to submit form data
         $.post($form.attr('action'), $form.serialize(), function(result) {
+            $('.contact-form').slideUp();
+            $('.contact-feedback').slideDown();
+            console.log('result');
+            $('.contact-feedback h2').html(result);
             // ... Process the result ...
-        }, 'json');
-    });;
+        });
+    });
 });
