@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\Response;
 require_once __DIR__.'/vendor/autoload.php';
 
 $app = new Silex\Application();
-$app['debug'] = true;
 
 $app->post('/send', function (Request $request) use ($app) {
         $message = $request->get('textarea');
