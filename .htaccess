@@ -1,7 +1,8 @@
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif||swf|css|js)$">
 Header set Cache-Control "max-age=290304000, public"
-
 </FilesMatch>
+
+
 RewriteEngine On
 
 RewriteRule ^send /app.php
