@@ -8,14 +8,6 @@ $(function(){
         }, 1000, 'easeOutQuint');
     });
 
-//    $('.contact').on('submit', function(e){
-//
-//        $('.contact-form').slideUp();
-//        $('.contact-feedback').slideDown();
-//
-//    });
-
-
     $('.contact').bootstrapValidator({
         message: 'This value is not valid',
         feedbackIcons: {
@@ -38,7 +30,6 @@ $(function(){
                 }
             },
             email: {
-                trigger: 'blur',
                 validators: {
                     notEmpty: {
                         message: 'The email is required and cannot be empty'
@@ -49,5 +40,23 @@ $(function(){
                 }
             }
         }
-    });
+    }).on('success.form.bv', function(e) {
+        // Prevent form submission
+        e.preventDefault();
+
+
+        $('.contact-form').slideUp();
+        $('.contact-feedback').slideDown();
+
+        // Get the form instance
+        var $form = $(e.target);
+
+        // Get the BootstrapValidator instance
+        var bv = $form.data('bootstrapValidator');
+
+        // Use Ajax to submit form data
+        $.post($form.attr('action'), $form.serialize(), function(result) {
+            // ... Process the result ...
+        }, 'json');
+    });;
 });
