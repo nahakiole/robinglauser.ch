@@ -4,8 +4,102 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12170aa202241a7bc6e6372ff175ae37",
+    "hash": "32d46eb63e835e205051f6bbd636269b",
     "packages": [
+        {
+            "name": "gregwar/captcha",
+            "version": "v1.0.11",
+            "target-dir": "Gregwar/Captcha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gregwar/Captcha.git",
+                "reference": "68c27a070922cf306984dc04a92a27525e534e83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gregwar/Captcha/zipball/68c27a070922cf306984dc04a92a27525e534e83",
+                "reference": "68c27a070922cf306984dc04a92a27525e534e83",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "captcha",
+            "autoload": {
+                "psr-0": {
+                    "Gregwar\\Captcha": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Passault",
+                    "email": "g.passault@gmail.com",
+                    "homepage": "http://www.gregwar.com/"
+                },
+                {
+                    "name": "Jeremy Livingston",
+                    "email": "jeremy.j.livingston@gmail.com"
+                }
+            ],
+            "description": "Captcha generator",
+            "homepage": "https://github.com/Gregwar/Captcha",
+            "keywords": [
+                "bot",
+                "captcha",
+                "spam"
+            ],
+            "time": "2014-03-19 15:13:34"
+        },
+        {
+            "name": "kilte/silex-captcha",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kilte/silex-captcha.git",
+                "reference": "a773e756525df7dca1705566d27f5e305c181b6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kilte/silex-captcha/zipball/a773e756525df7dca1705566d27f5e305c181b6a",
+                "reference": "a773e756525df7dca1705566d27f5e305c181b6a",
+                "shasum": ""
+            },
+            "require": {
+                "gregwar/captcha": "~1.0",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "silex/silex": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kilte\\Silex\\Captcha\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kilte Leichnam",
+                    "email": "nwotnbm@gmail.com"
+                }
+            ],
+            "description": "Gregwar/Captcha service provider for Silex.",
+            "keywords": [
+                "CaptchaServiceProvider",
+                "captcha",
+                "silex"
+            ],
+            "time": "2014-01-01 20:39:12"
+        },
         {
             "name": "pimple/pimple",
             "version": "v1.1.1",

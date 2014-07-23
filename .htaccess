@@ -4,4 +4,6 @@ Header set Cache-Control "max-age=290304000, public"
 </FilesMatch>
 RewriteEngine On
 
-RewriteRule ^send /contact.php
+RewriteRule ^send /app.php
+RewriteRule ^captcha /app.php
+RewriteRule ^get /app.php

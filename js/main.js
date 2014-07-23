@@ -38,14 +38,18 @@ $(function(){
                         message: 'The input is not a valid email address'
                     }
                 }
+            },
+            captcha_code: {
+                validators: {
+                    notEmpty: {
+                        message: 'We need this for security reasons'
+                    }
+                }
             }
         }
     }).on('success.form.bv', function(e) {
         // Prevent form submission
         e.preventDefault();
-
-
-
 
         // Get the form instance
         var $form = $(e.target);
@@ -55,11 +59,16 @@ $(function(){
 
         // Use Ajax to submit form data
         $.post($form.attr('action'), $form.serialize(), function(result) {
+            if (result == 'captcha'){
+                bv.resetField('captcha_code', true).updateMessage('captcha_code', '', 'Wrong Captcha');
+                document.getElementById('captcha').src = '/captcha?' + Math.random();
+                return false;
+            }
             $('.contact-form').slideUp();
             $('.contact-feedback').slideDown();
-            console.log('result');
+            console.log(result);
             $('.contact-feedback h2').html(result);
-            // ... Process the result ...
+            return true;
         });
     });
 });
