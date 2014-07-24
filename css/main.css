@@ -180,6 +180,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     letter-spacing: 2px;
 }
 
+.navbar-default {
+    background: #272F38;
+    border-color: #272F38;
+}
+
 .navbar-brand small {
     font-size: 12px;
 }
@@ -309,26 +314,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .jumbotron {
-    background: #272F38;
+    background: #ff594d;
     color: #fff;
 }
 .jumbotron .btn-primary {
-    background: #6c6c6c;
-    border-color: #6c6c6c;
+    background: #353E49;
+    border-color: #353E49;
 }
 .jumbotron .btn-primary:hover {
-    background: #6c6c6c;
-    border-color: #6c6c6c;
+    background: #353E49;
+    border-color: #353E49;
 }
 
 .jumbotron .btn-info {
-    background: #ff594d;
-    border-color: #FF706C;
+    background: #272F38;
+    border-color: #272F38;
 }
 
 .jumbotron .btn-info:hover {
-    background: #ff594d;
-    border-color: #FF706C;
+    background: #272F38;
+    border-color: #272F38;
 }
 
 .jumbotron a {
