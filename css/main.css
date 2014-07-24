@@ -320,6 +320,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: #DA6054;  border-color: #BE544A;
 }
 
+.jumbotron a {
+    color: #fff;
+}
+
 .skills a {
     color: #fff;
     text-decoration: underline;
