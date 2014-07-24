@@ -317,7 +317,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-color: #BE544A;
 }
 .jumbotron .btn-primary:hover {
-    background: #DA6054;  border-color: #BE544A;
+    background: #d55b50;
+    border-color: #BE544A;
+}
+
+.jumbotron .btn-info {
+    background: #CF5B50;
+    border-color: #BE544A;
+}
+
+.jumbotron .btn-info:hover {
+    background: #d55b50;
+    border-color: #BE544A;
 }
 
 .jumbotron a {
