@@ -21,21 +21,21 @@ $(function(){
                 message: '',
                 validators: {
                     notEmpty: {
-                        message: 'I don\'t like empty messages!'
+                        message: 'Please don\'t send me empty mails!'
                     },
                     stringLength: {
                         min: 10,
-                        message: 'I don\'t like short messages either!'
+                        message: 'This seems a little bit too short.'
                     }
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'The email is required and cannot be empty'
+                        message: 'I need your mail address so I can get back to you.'
                     },
                     emailAddress: {
-                        message: 'The input is not a valid email address'
+                        message: 'This doesn\' looks like a real mail address.'
                     }
                 }
             },
