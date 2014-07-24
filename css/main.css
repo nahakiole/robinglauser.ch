@@ -302,33 +302,33 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .skills {
-    background: #3A80D8;
+    background: #353E49;
     color: #fff;
     padding: 10px 0;
     margin: 40px 0;
 }
 
 .jumbotron {
-    background: #E06155;
+    background: #272F38;
     color: #fff;
 }
 .jumbotron .btn-primary {
-    background: #CF5B50;
-    border-color: #BE544A;
+    background: #6c6c6c;
+    border-color: #6c6c6c;
 }
 .jumbotron .btn-primary:hover {
-    background: #d55b50;
-    border-color: #BE544A;
+    background: #6c6c6c;
+    border-color: #6c6c6c;
 }
 
 .jumbotron .btn-info {
-    background: #CF5B50;
-    border-color: #BE544A;
+    background: #ff594d;
+    border-color: #FF706C;
 }
 
 .jumbotron .btn-info:hover {
-    background: #d55b50;
-    border-color: #BE544A;
+    background: #ff594d;
+    border-color: #FF706C;
 }
 
 .jumbotron a {
