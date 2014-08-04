@@ -158,9 +158,6 @@
 
 
 
-body {
-    padding-top: 50px;
-}
 
 input, .btn, .form-control, .dropdown-menu {
     border-radius: 0;
@@ -314,8 +311,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .jumbotron {
-    background: #ff594d;
+    background: #FF706C;
     color: #fff;
+    text-align: center;
 }
 .jumbotron .btn-primary {
     background: #353E49;
