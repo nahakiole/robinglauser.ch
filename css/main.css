@@ -156,9 +156,6 @@
     }
 }
 
-
-
-
 input, .btn, .form-control, .dropdown-menu {
     border-radius: 0;
 }
@@ -195,7 +192,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .portfolio .col-md-3 a {
     text-decoration: none;
 }
-
 
 .portfolio .portfolio-overlay {
     color: #000000;
@@ -257,7 +253,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .account-list a .fa-xing {
-    background: #126567 ;
+    background: #126567;
 }
 
 .account-list a .fa-github {
@@ -265,19 +261,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .account-list a .fa-skype {
-    background: #12A5F4 ;
+    background: #12A5F4;
 }
 
 .account-list a .fa-steam {
-    background: #272b30 ;
+    background: #272b30;
 }
 
 .account-list a .fa-deviantart {
-    background: #3b5a4a ;
+    background: #3b5a4a;
 }
 
 .account-list a .fa-reddit {
-    background: #efefef ;
+    background: #efefef;
     color: #000;
 }
 
@@ -311,27 +307,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .jumbotron {
-    background: #FF706C;
+    background: #C23B37;
     color: #fff;
     text-align: center;
 }
-.jumbotron .btn-primary {
-    background: #353E49;
-    border-color: #353E49;
-}
-.jumbotron .btn-primary:hover {
-    background: #353E49;
-    border-color: #353E49;
+
+
+.jumbotron .btn-default {
+    background: #fff;
+    color: #C23B37;
+    border: 3px solid #C23B37;
 }
 
-.jumbotron .btn-info {
-    background: #272F38;
-    border-color: #272F38;
+.jumbotron .btn-default:hover {
+    background: #C23B37;
+    border-color: #963531;
+    color: #fff;
 }
 
-.jumbotron .btn-info:hover {
-    background: #272F38;
-    border-color: #272F38;
+.btn {
+    -webkit-transition: 0.3s background, 0.3s color, 0.3s border;
+    -moz-transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
+    -ms-transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
+    -o-transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
+    transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
 }
 
 .jumbotron a {
