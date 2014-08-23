@@ -32,7 +32,11 @@ $app->post(
         if (empty($mail) || empty($message)) {
             return new Response('This is bad!', 200);
         }
-        mail('robin.glauser@gmail.com', 'Feedback from ' . $mail, $message);
+        $header = 'From: '.$mail.'' . "\r\n" .
+            'Reply-To: robin.glauser@gmail.com' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
+        mail('robin.glauser@gmail.com', 'Feedback from ' . $mail, $message,$header);
 
         return new Response('You\'re Awesome', 200);
     }
