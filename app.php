@@ -11,7 +11,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $app = new Silex\Application();
 
-$app['debug'] = true;
 
 $captcha = new CaptchaServiceProvider();
 $app->register(new SessionServiceProvider)
@@ -25,7 +24,7 @@ $app->post(
         $mail = $request->get('email');
         $captcha = $request->get('captcha_code');
 
-        if(!$app['captcha.test']($captcha)){
+        if (!$app['captcha.test']($captcha)) {
             return new Response('captcha', 200);
         }
 
