@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .actual-footer {
     padding: 10px 0;
-    background: #121212;
+    background: #1A222F;
     color: #fff;
 }
 
@@ -300,29 +300,46 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .skills {
-    background: #353E49;
+    background: #D24335;
     color: #fff;
     padding: 10px 0;
     margin: 40px 0;
 }
 
 .jumbotron {
-    background: #C23B37;
+    background: #1A222F;
     color: #fff;
     text-align: center;
 }
 
 
 .jumbotron .btn-default {
-    background: #fff;
-    color: #C23B37;
-    border: 3px solid #C23B37;
+    border-color: transparent;
+    background: #008E74;
+    color: #fff;
 }
 
 .jumbotron .btn-default:hover {
-    background: #C23B37;
-    border-color: #963531;
+    background: #006850;
     color: #fff;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #008E74;
+    border-color: #008E74;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #006e5a;
+    border-color: #006e5a;
+}
+
+.btn-primary:focus {
+    color: #ffffff;
+    background-color: #006e5a;
+    border-color: #006e5a;
 }
 
 .btn {
