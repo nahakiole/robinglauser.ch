@@ -38,13 +38,6 @@ $(function(){
                         message: 'This doesn\' looks like a real mail address.'
                     }
                 }
-            },
-            captcha_code: {
-                validators: {
-                    notEmpty: {
-                        message: 'We need this for security reasons'
-                    }
-                }
             }
         }
     }).on('success.form.bv', function(e) {

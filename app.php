@@ -22,11 +22,6 @@ $app->post(
     '/send', function (Request $request) use ($app) {
         $message = $request->get('textarea');
         $mail = $request->get('email');
-        $captcha = $request->get('captcha_code');
-
-        if (!$app['captcha.test']($captcha)) {
-            return new Response('captcha', 200);
-        }
 
         if (empty($mail) || empty($message)) {
             return new Response('This is bad!', 200);
