@@ -1,4 +1,10 @@
-delta.robinio.ch
+robinglauser.ch
 ================
 
-My 4th try at a nice clean portfolio.
+My actual portfolio live at http://www.robinglauser.ch/ 
+
+You can see older versions here:
+
+* http://alpha.robinio.ch/
+* http://beta.robinio.ch/ (Try to use the konami code here :smile:)
+* http://gamma.robinio.ch/
