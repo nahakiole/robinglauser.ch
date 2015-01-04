@@ -23,7 +23,7 @@ $app->post(
         $message = $request->get('textarea');
         $mail = $request->get('email');
 
-        if (empty($mail) || empty($message)) {
+        if (empty($mail) || empty($message) || filter_var($mail, FILTER_VALIDATE_EMAIL)) {
             return new Response('This is bad!', 200);
         }
         $header = 'From: '.$mail.'' . "\r\n" .
