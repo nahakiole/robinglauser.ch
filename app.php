@@ -1,8 +1,5 @@
 <?php
 
-use Kilte\Silex\Captcha\CaptchaServiceProvider;
-use Silex\Provider\SessionServiceProvider;
-use Silex\Provider\UrlGeneratorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -12,11 +9,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 $app = new Silex\Application();
 
 
-$captcha = new CaptchaServiceProvider();
-$app->register(new SessionServiceProvider)
-    ->register(new UrlGeneratorServiceProvider)
-    ->register($captcha)
-    ->mount('/', $captcha);
 
 $app->post(
     '/send', function (Request $request) use ($app) {

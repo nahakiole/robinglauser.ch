@@ -59,7 +59,6 @@ $(function(){
             }
             $('.contact-form').slideUp();
             $('.contact-feedback').slideDown();
-            console.log(result);
             $('.contact-feedback h2').html(result);
             return true;
         });
