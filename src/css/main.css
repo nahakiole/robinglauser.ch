@@ -1,219 +1,224 @@
 /* clear first in row in ie 8 or lower */
-.multi-columns-row .first-in-row {
+.multi-columns-row .first-in-row{
     clear: left;
 }
 
 /* clear the first in row for any block that has the class "multi-columns-row" */
-.multi-columns-row .col-xs-6:nth-child(2n + 3) {
+.multi-columns-row .col-xs-6:nth-child(2n + 3){
     clear: left;
 }
 
-.multi-columns-row .col-xs-4:nth-child(3n + 4) {
+.multi-columns-row .col-xs-4:nth-child(3n + 4){
     clear: left;
 }
 
-.multi-columns-row .col-xs-3:nth-child(4n + 5) {
+.multi-columns-row .col-xs-3:nth-child(4n + 5){
     clear: left;
 }
 
-.multi-columns-row .col-xs-2:nth-child(6n + 7) {
+.multi-columns-row .col-xs-2:nth-child(6n + 7){
     clear: left;
 }
 
-.multi-columns-row .col-xs-1:nth-child(12n + 13) {
+.multi-columns-row .col-xs-1:nth-child(12n + 13){
     clear: left;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
     /* reset previous grid */
-    .multi-columns-row .col-xs-6:nth-child(2n + 3) {
+    .multi-columns-row .col-xs-6:nth-child(2n + 3){
         clear: none;
     }
 
-    .multi-columns-row .col-xs-4:nth-child(3n + 4) {
+    .multi-columns-row .col-xs-4:nth-child(3n + 4){
         clear: none;
     }
 
-    .multi-columns-row .col-xs-3:nth-child(4n + 5) {
+    .multi-columns-row .col-xs-3:nth-child(4n + 5){
         clear: none;
     }
 
-    .multi-columns-row .col-xs-2:nth-child(6n + 7) {
+    .multi-columns-row .col-xs-2:nth-child(6n + 7){
         clear: none;
     }
 
-    .multi-columns-row .col-xs-1:nth-child(12n + 13) {
+    .multi-columns-row .col-xs-1:nth-child(12n + 13){
         clear: none;
     }
 
     /* clear first in row for small columns */
-    .multi-columns-row .col-sm-6:nth-child(2n + 3) {
+    .multi-columns-row .col-sm-6:nth-child(2n + 3){
         clear: left;
     }
 
-    .multi-columns-row .col-sm-4:nth-child(3n + 4) {
+    .multi-columns-row .col-sm-4:nth-child(3n + 4){
         clear: left;
     }
 
-    .multi-columns-row .col-sm-3:nth-child(4n + 5) {
+    .multi-columns-row .col-sm-3:nth-child(4n + 5){
         clear: left;
     }
 
-    .multi-columns-row .col-sm-2:nth-child(6n + 7) {
+    .multi-columns-row .col-sm-2:nth-child(6n + 7){
         clear: left;
     }
 
-    .multi-columns-row .col-sm-1:nth-child(12n + 13) {
+    .multi-columns-row .col-sm-1:nth-child(12n + 13){
         clear: left;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px){
     /* reset previous grid */
-    .multi-columns-row .col-sm-6:nth-child(2n + 3) {
+    .multi-columns-row .col-sm-6:nth-child(2n + 3){
         clear: none;
     }
 
-    .multi-columns-row .col-sm-4:nth-child(3n + 4) {
+    .multi-columns-row .col-sm-4:nth-child(3n + 4){
         clear: none;
     }
 
-    .multi-columns-row .col-sm-3:nth-child(4n + 5) {
+    .multi-columns-row .col-sm-3:nth-child(4n + 5){
         clear: none;
     }
 
-    .multi-columns-row .col-sm-2:nth-child(6n + 7) {
+    .multi-columns-row .col-sm-2:nth-child(6n + 7){
         clear: none;
     }
 
-    .multi-columns-row .col-sm-1:nth-child(12n + 13) {
+    .multi-columns-row .col-sm-1:nth-child(12n + 13){
         clear: none;
     }
 
     /* clear first in row for medium columns */
-    .multi-columns-row .col-md-6:nth-child(2n + 3) {
+    .multi-columns-row .col-md-6:nth-child(2n + 3){
         clear: left;
     }
 
-    .multi-columns-row .col-md-4:nth-child(3n + 4) {
+    .multi-columns-row .col-md-4:nth-child(3n + 4){
         clear: left;
     }
 
-    .multi-columns-row .col-md-3:nth-child(4n + 5) {
+    .multi-columns-row .col-md-3:nth-child(4n + 5){
         clear: left;
     }
 
-    .multi-columns-row .col-md-2:nth-child(6n + 7) {
+    .multi-columns-row .col-md-2:nth-child(6n + 7){
         clear: left;
     }
 
-    .multi-columns-row .col-md-1:nth-child(12n + 13) {
+    .multi-columns-row .col-md-1:nth-child(12n + 13){
         clear: left;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
     /* reset previous grid */
-    .multi-columns-row .col-md-6:nth-child(2n + 3) {
+    .multi-columns-row .col-md-6:nth-child(2n + 3){
         clear: none;
     }
 
-    .multi-columns-row .col-md-4:nth-child(3n + 4) {
+    .multi-columns-row .col-md-4:nth-child(3n + 4){
         clear: none;
     }
 
-    .multi-columns-row .col-md-3:nth-child(4n + 5) {
+    .multi-columns-row .col-md-3:nth-child(4n + 5){
         clear: left;
     }
 
-    .multi-columns-row .col-md-2:nth-child(6n + 7) {
+    .multi-columns-row .col-md-2:nth-child(6n + 7){
         clear: none;
     }
 
-    .multi-columns-row .col-md-1:nth-child(12n + 13) {
+    .multi-columns-row .col-md-1:nth-child(12n + 13){
         clear: none;
     }
 
     /* clear first in row for large columns */
-    .multi-columns-row .col-lg-6:nth-child(2n + 3) {
+    .multi-columns-row .col-lg-6:nth-child(2n + 3){
         clear: left;
     }
 
-    .multi-columns-row .col-lg-4:nth-child(3n + 4) {
+    .multi-columns-row .col-lg-4:nth-child(3n + 4){
         clear: left;
     }
 
-    .multi-columns-row .col-lg-3:nth-child(4n + 5) {
+    .multi-columns-row .col-lg-3:nth-child(4n + 5){
         clear: left;
     }
 
-    .multi-columns-row .col-lg-2:nth-child(6n + 7) {
+    .multi-columns-row .col-lg-2:nth-child(6n + 7){
         clear: left;
     }
 
-    .multi-columns-row .col-lg-1:nth-child(12n + 13) {
+    .multi-columns-row .col-lg-1:nth-child(12n + 13){
         clear: left;
     }
 }
 
-input, .btn, .form-control, .dropdown-menu {
+input, .btn, .form-control, .dropdown-menu{
     border-radius: 0;
 }
 
-#textarea {
+#textarea{
     resize: vertical;
 }
 
-ul {
+ul{
     list-style-type: square;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.navbar-default {
+.navbar-default{
     background: #272F38;
     border-color: #272F38;
 }
 
-.navbar-brand small {
+.navbar-brand small{
     font-size: 12px;
 }
 
-.skills .devicons {
+.skills .devicons{
     font-size: 6rem;
     text-align: center;
     position: relative;
 }
 
-.portfolio .col-md-3 a {
+.portfolio .col-md-3 a{
     text-decoration: none;
 }
 
-.portfolio .portfolio-overlay {
+.portfolio .col-md-3 a .img-responsive{
+    display: block;
+    margin: auto;
+}
+
+.portfolio .portfolio-overlay{
     color: #000000;
 }
 
-.portfolio .portfolio-overlay h3 {
+.portfolio .portfolio-overlay h3{
     margin: 10px 0 5px 0;
 }
 
-.portfolio .devicons-github_badge {
+.portfolio .devicons-github_badge{
     font-size: 10em;
     background: #121212;
     color: #fff;
 }
 
-.account-list {
+.account-list{
     font-size: 0;
     margin-left: 5px;
     margin-top: -3px;
 }
 
-.account-list .fa {
+.account-list .fa{
     height: 26px;
     display: inline-block;
     padding: 6px 0 6px 5px;
@@ -223,20 +228,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 0;
 }
 
-.account-list a {
+.account-list a{
     text-decoration: none;
     font-size: 13px;
     color: #fff;
 }
 
-@media(max-width:992px){
-    .account-list a {
-        margin:10px 0;
+@media (max-width: 992px){
+    .account-list a{
+        margin: 10px 0;
         display: block;
         text-align: center;
     }
 
-    .form-horizontal label.control-label {
+    .form-horizontal label.control-label{
         margin-bottom: 15px;
         margin-top: 30px;
         font-size: 23px;
@@ -244,7 +249,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 }
 
-.account-list a .fa {
+.account-list a .fa{
     -webkit-transition: background 0.4s;
     -moz-transition: background 0.4s;
     -ms-transition: background 0.4s;
@@ -252,76 +257,75 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transition: background 0.4s;
 }
 
-.account-list a:hover {
+.account-list a:hover{
     opacity: 1;
 }
 
-.account-list a .fa-reddit {
+.account-list a .fa-reddit{
     background: #efefef;
     color: #000;
 }
 
-.actual-footer {
+.actual-footer{
     padding: 10px 0;
     background: #2c3e50;
     color: #fff;
 }
 
-.top30 {
+.top30{
     margin-top: 30px;
 }
 
-.top60 {
+.top60{
     margin-top: 60px;
 }
 
-.top15 {
+.top15{
     margin-top: 15px;
 }
 
-.contact-feedback {
+.contact-feedback{
     display: none;
 }
 
-.skills {
+.skills{
     background: #2c3e50;
     color: #fff;
     padding: 10px 0;
     margin: 40px 0;
 }
 
-.jumbotron {
+.jumbotron{
     background: #2c3e50;
     color: #fff;
     text-align: center;
 }
 
-
-.jumbotron .btn-default {
+.jumbotron .btn-default{
     border-color: transparent;
     background: #27ae60;
     color: #fff;
 }
 
-.jumbotron .btn-default:hover {
+.jumbotron .btn-default:hover{
     background: #2ecc71;
     color: #fff;
 }
 
-.btn-primary {
+.btn-primary{
     color: #ffffff;
     background-color: #2980b9;
     border-color: #2980b9;
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus{
     color: #ffffff;
     background-color: #3498db;
     border-color: #3498db;
 }
 
-.btn {
+.btn{
     -webkit-transition: 0.3s background, 0.3s color, 0.3s border;
     -moz-transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
     -ms-transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
@@ -329,11 +333,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transition: 0.3s background, 0.3s color, 0.3s color, 0.3s border;
 }
 
-.jumbotron a {
+.jumbotron a{
     color: #fff;
 }
 
-.skills a {
+.skills a{
     color: #fff;
     text-decoration: underline;
 }
