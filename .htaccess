@@ -5,7 +5,7 @@ Header set Cache-Control "max-age=290304000, public"
 
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_HOST} !(www.robinglauser.ch|localhost)$ [NC]
-RewriteRule ^(.*)$ http://www.robinglauser.ch/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} !(www.robinglauser.ch|localhost)$ [NC]
+#RewriteRule ^(.*)$ http://www.robinglauser.ch/$1 [L,R=301]
 RewriteRule ^send /app.php
 RewriteRule ^captcha /app.php

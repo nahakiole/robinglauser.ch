@@ -12,7 +12,7 @@ var concat = require('gulp-concat'),
     watch = require('gulp-watch');
 
 var paths = {
-    css: ['./src/css/bootstrap.min.css', './src/css/bootstrapValidator.css', './src/css/devicons.css', './src/css/font-awesome.min.css', './src/css/main.css'],
+    css: ['./src/css/bootstrap.css', './src/css/bootstrapValidator.css', './src/css/devicons.css', './src/css/font-awesome.min.css', './src/css/main.css'],
     js: ['./src/js/jquery.min.js', './src/js/bootstrap.js', './src/js/bootstrapValidator.min.js', './src/js/jquery.easing.1.3.js', './src/js/main.js'],
     html: './src/index.html',
     images: './src/img/*'
