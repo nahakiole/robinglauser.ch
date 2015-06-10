@@ -8,6 +8,7 @@ var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var minifyInline = require('gulp-minify-inline');
 
 // JS concat, strip debugging and minify
 gulp.task('default', function() {
@@ -29,7 +30,7 @@ gulp.task('default', function() {
         .pipe(minifyHTML({
             conditionals: true,
             spare:true
-        }))
+        })).pipe(minifyInline())
         .pipe(gulp.dest('./'));
 
 
