@@ -1,6 +1,6 @@
-
-
 $(function(){
+    $('body').addClass('ready');
+
     $('.btn-scroll-to-contact').on('click', function(e){
         e.preventDefault();
         jQuery('html, body').animate({
