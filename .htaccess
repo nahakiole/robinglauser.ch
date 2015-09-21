@@ -1,12 +1,14 @@
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif||swf|css|js|woff)$">
 Header set Cache-Control "max-age=290304000, public"
 </FilesMatch>
-
-
 RewriteEngine On
 RewriteBase /
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]
+
 RewriteCond %{HTTP_HOST} !(www.robinglauser.ch|localhost)$ [NC]
-RewriteRule ^(.*)$ http://www.robinglauser.ch/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.robinglauser.ch/$1 [L,R=301]
 RewriteRule ^send /app.php
 RewriteRule ^captcha /app.php
 
