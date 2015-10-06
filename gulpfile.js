@@ -12,10 +12,10 @@ var concat = require('gulp-concat'),
     watch = require('gulp-watch');
 
 var paths = {
-    css: ['./src/css/bootstrap.css', './src/css/bootstrapValidator.css', './src/css/devicons.css', './src/css/font-awesome.min.css', './src/css/main.css'],
-    js: ['./src/js/jquery.min.js', './src/js/bootstrap.js', './src/js/bootstrapValidator.min.js', './src/js/jquery.easing.1.3.js', './src/js/main.js'],
+    css: ['./src/font-awesome/css/font-awesome.css', './src/css/animate.min.css', './src/css/bootstrap.css','./src/css/devicons.css', './src/css/creative.css'],
+    js: ['./src/js/jquery.js', './src/js/bootstrap.js', './src/js/jquery.easing.min.js', './src/js/jquery.fittext.js', './src/js/wow.min.js', './src/js/classie.js','./src/js/github-stars.js', './src/js/creative.js'],
     html: './src/index.html',
-    images: './src/img/*'
+    images: './src/img/**'
 };
 
 gulp.task('default', ['js', 'css', 'html', 'img', 'watch']);
@@ -33,7 +33,7 @@ gulp.task('css', function () {
 
     gulp.src(paths.css)
         .pipe(concat('styles.css'))
-        .pipe(autoprefix('last 2 versions'))
+        .pipe(autoprefix('> 1%'))
         .pipe(minifyCSS({
             keepSpecialComments: 0
         }))
@@ -66,7 +66,7 @@ gulp.task('img', function () {
 
 gulp.task('watch', function () {
     gulp.watch([paths.html], ['html']);
-    gulp.watch(paths.images, ['images']);
+    gulp.watch(paths.images, ['img']);
     gulp.watch(paths.css, ['css']);
     gulp.watch(paths.js, ['js']);
 });
