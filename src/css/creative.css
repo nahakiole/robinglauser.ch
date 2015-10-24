@@ -87,9 +87,61 @@ aside{
     transition: all .35s;
 }
 
+.navbar-default .navbar-brand {
+    color: #333;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle {
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 0;
+    transition: 0.5s all;
+}
+
+
+.navbar-toggle .sr-only+.icon-bar {
+    transform:rotate(-45deg)translateX(-3px)translateY(5px);
+}
+
+
+.navbar-toggle .sr-only+.icon-bar+.icon-bar {
+    opacity: 0;
+}
+
+.navbar-toggle .icon-bar:last-child {
+    transform:rotate(45deg)translateX(-6px)translateY(-8px);
+}
+
+.navbar-toggle.collapsed .sr-only~.icon-bar {
+    transform: rotate(0deg)translateX(0)translateY(0);
+    opacity: 1;
+}
+
+.navbar-toggle {
+    padding: 0;
+    margin: 14px 15px;
+}
+
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus{
-    color: #eb3812;
+    color: #3498db;
 }
 
 .navbar-default .nav > li > a,
@@ -153,7 +205,7 @@ aside{
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus{
-        color: #eb3812;
+        color: #3498db;
     }
 
     .navbar-default.affix .nav > li > a,
@@ -170,7 +222,7 @@ aside{
 header{
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100vh;
     text-align: center;
     color: #fff;
     background-image: url(../img/header.jpg);
@@ -182,9 +234,10 @@ header{
 }
 
 header .header-content{
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    padding: 100px 15px;
+    padding: 100px 15px 50px;
     text-align: center;
     z-index: 2;
 }
@@ -212,8 +265,14 @@ header:after{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+49,000000+100&amp;0+48,0.8+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 48%, rgba(0,0,0,0.02) 49%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.02)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 48%,rgba(0,0,0,0.02) 49%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 48%,rgba(0,0,0,0.02) 49%,rgba(0,0,0,0.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 48%,rgba(0,0,0,0.02) 49%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 48%,rgba(0,0,0,0.02) 49%,rgba(0,0,0,0.8) 100%);
 }
 
 
@@ -226,9 +285,6 @@ header:after{
         position: absolute;
         bottom: 5%;
         padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
 
     header .header-content .header-content-inner{
@@ -307,7 +363,7 @@ header:after{
     font-size: 15px;
     opacity: 0;
     transition: 0.5s all;
-    margin:0;
+    margin:5px 0 0;
 }
 
 .portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content p {
@@ -410,6 +466,7 @@ body{
 
 .navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
     font-size: 12px;
+    font-weight: 800;
 }
 
 @media only screen and (min-width: 768px){
@@ -2199,7 +2256,7 @@ hr.small {
 }
 
 .skills {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .bg-primary a {
@@ -2209,7 +2266,6 @@ hr.small {
 }
 
 .skills a {
-    font-size: 14px;
     color: #fff;
     text-decoration: underline;
 }
@@ -2224,4 +2280,22 @@ hr.small {
 
 .section-spacer {
     margin-top: 60px;
+}
+
+section .container h3 a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.list-group-item:first-child,
+.list-group-item:last-child {
+    border-radius: 0;
+}
+
+a.list-group-item .list-group-item-heading {
+    display: inline-block;
+}
+
+.list-group-item {
+    padding: 15px;
 }

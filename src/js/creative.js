@@ -16,13 +16,12 @@
         event.preventDefault();
     });
 
-    $('.contributions').find('.list-group-item-heading').each(function(){
-        var that = this;
-        githubStars($(this).text(), function(count){
-            $(that).prev('.badge').html(count.replace(/./g, function(c, i, a) {
-                return i && c !== "." && ((a.length - i) % 3 === 0) ? ',' + c : c;
-            })+'<i class="fa fa-star"></i>')
+    $.getJSON( "/feed", function( data ) {
+        var items = [];
+        $.each( data, function( key, val ) {
+            items.push( '<div class="col-md-3 col-sm-6 wow fadeIn"> <h3><a href="'+val.link+'" target="_blank">'+val.title+'</a></h3> <p> '+val.summary+'</p> <a href="'+val.link+'" target="_blank">Read article</a> </div>' );
         });
+        $( ".blog-feed" ).append(items.join( "" ));
     });
 
     // Fit Text Plugin for Main Header
