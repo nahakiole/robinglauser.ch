@@ -226,12 +226,39 @@ header{
     min-height: 100vh;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.1.jpg);
+    background-image: url(../img/header-xs.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    header{
+        background-image: url(../img/header-sm.jpg);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    header{
+        background-image: url(../img/header-md.jpg);
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    header{
+        background-image: url(../img/header-lg.jpg);
+    }
+}
+
+@media only screen and (min-width : 1920px) {
+    header{
+        background-image: url(../img/header.jpg);
+    }
 }
 
 header .header-content{
