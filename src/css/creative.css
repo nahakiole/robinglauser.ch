@@ -226,7 +226,7 @@ header{
     min-height: 100vh;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header-xs.1.jpg);
+    background-image: url(../img/header-xs.2.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -237,27 +237,27 @@ header{
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     header{
-        background-image: url(../img/header-sm.jpg);
+        background-image: url(../img/header-sm.2.jpg);
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     header{
-        background-image: url(../img/header-md.1.jpg);
+        background-image: url(../img/header-md.2.jpg);
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     header{
-        background-image: url(../img/header-lg.jpg);
+        background-image: url(../img/header-lg.2.jpg);
     }
 }
 
 @media only screen and (min-width : 1920px) {
     header{
-        background-image: url(../img/header.jpg);
+        background-image: url(../img/header.2.jpg);
     }
 }
 
