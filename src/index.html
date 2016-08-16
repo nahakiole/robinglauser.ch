@@ -2724,6 +2724,15 @@
             clear: both;
         }
 
+        #skills, #portfolio, #contributions, #blog, #contact {
+            opacity: 0;
+            -webkit-transition: 0.5s opacity;
+            -moz-transition: 0.5s opacity;
+            -ms-transition: 0.5s opacity;
+            -o-transition: 0.5s opacity;
+            transition: 0.5s opacity;
+        }
+
     </style>
     <script>
         /*!
@@ -2779,6 +2788,9 @@
                 ss.onloadcssdefined = onloadcssdefined;
                 onloadcssdefined(function () {
                     ss.media = media || "all";
+                    setTimeout(function(){
+                        document.body.className = "ready";
+                    },100);
                 });
                 return ss;
             };
@@ -3220,7 +3232,7 @@
         </div>
     </div>
 </section>
-<section class="bg-dark">
+<section class="bg-dark" id="contributions">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 text-center col-lg-offset-3">
