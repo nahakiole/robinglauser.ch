@@ -2335,3 +2335,12 @@ a.list-group-item .list-group-item-heading {
 .list-group-item {
     padding: 15px;
 }
+
+.occupation {
+    margin-left: 10px;
+    list-style-type: square;
+}
+
+.occupation li:first-child {
+    padding-left: 53px;
+}
