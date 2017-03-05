@@ -15,10 +15,9 @@ var paths = {
     css: ['./src/font-awesome/css/font-awesome.css', './src/css/animate.min.css', './src/css/bootstrap.css','./src/css/devicons.css', './src/css/creative.css'],
     js: ['./src/js/jquery.js', './src/js/bootstrap.js', './src/js/jquery.easing.min.js', './src/js/jquery.fittext.js', './src/js/wow.min.js', './src/js/classie.js','./src/js/github-stars.js', './src/js/creative.js'],
     html: './src/index.html',
-    images: './src/img/**'
 };
 
-gulp.task('default', ['js', 'css', 'html', 'img', 'watch']);
+gulp.task('default', ['js', 'css', 'html', 'watch']);
 
 
 gulp.task('js', function () {
@@ -53,20 +52,9 @@ gulp.task('html', function () {
 });
 
 
-gulp.task('img', function () {
-
-    gulp.src((paths.images))
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('./img'));
-});
 
 gulp.task('watch', function () {
     gulp.watch([paths.html], ['html']);
-    gulp.watch(paths.images, ['img']);
     gulp.watch(paths.css, ['css']);
     gulp.watch(paths.js, ['js']);
 });
