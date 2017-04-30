@@ -9,12 +9,27 @@ var concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     minifyInline = require('gulp-minify-inline'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    sass = require('gulp-sass');
 
 var paths = {
-    css: ['./src/font-awesome/css/font-awesome.css', './src/css/animate.min.css', './src/css/bootstrap.css','./src/css/devicons.css', './src/css/creative.css'],
-    js: ['./src/js/jquery.js', './src/js/bootstrap.js', './src/js/jquery.easing.min.js', './src/js/jquery.fittext.js', './src/js/wow.min.js', './src/js/classie.js','./src/js/github-stars.js', './src/js/creative.js'],
-    html: './src/index.html',
+    css: [
+        './src/font-awesome/css/font-awesome.css',
+        './src/css/animate.min.css',
+        './src/css/bootstrap.css',
+        './src/css/devicons.css',
+        './src/css/style.scss'
+    ],
+    js: ['./src/js/jquery.js',
+        './src/js/bootstrap.js',
+        './src/js/jquery.easing.min.js',
+        './src/js/jquery.fittext.js',
+        './src/js/wow.min.js',
+        './src/js/classie.js',
+        './src/js/github-stars.js',
+        './src/js/creative.js'
+    ],
+    html: './src/index.html'
 };
 
 gulp.task('default', ['js', 'css', 'html', 'watch']);
@@ -31,6 +46,7 @@ gulp.task('js', function () {
 gulp.task('css', function () {
 
     gulp.src(paths.css)
+        .pipe(sass())
         .pipe(concat('styles.css'))
         .pipe(autoprefix('> 1%'))
         .pipe(minifyCSS({
@@ -50,7 +66,6 @@ gulp.task('html', function () {
         })).pipe(minifyInline())
         .pipe(gulp.dest('./'));
 });
-
 
 
 gulp.task('watch', function () {

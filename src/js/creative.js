@@ -24,15 +24,6 @@
         $( ".blog-feed" ).append(items.join( "" ));
     });
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        4, {
-            minFontSize: '80px',
-            maxFontSize: '100px'
-        }
-    );
-
-
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
