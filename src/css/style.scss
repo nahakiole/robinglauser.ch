@@ -3482,16 +3482,20 @@ a {
     a {
       width: 200px;
     }
-    li {}
+    li {
+    }
   }
   li {
-    &:hover > a, &.focus > a {}
+    &:hover > a, &.focus > a {
+    }
   }
   ul {
     ul {
-      :hover > a, .focus > a {}
+      :hover > a, .focus > a {
+      }
       a {
-        &:hover, &.focus {}
+        &:hover, &.focus {
+        }
       }
     }
     li {
@@ -3505,7 +3509,8 @@ a {
       }
     }
   }
-  .current_page_item > a, .current-menu-item > a, .current_page_ancestor > a {}
+  .current_page_item > a, .current-menu-item > a, .current_page_ancestor > a {
+  }
 }
 
 .navbar-custom .nav {
@@ -3741,7 +3746,8 @@ p.excerpt {
   padding: 10px 0;
   position: relative;
   width: 100%;
-  span {}
+  span {
+  }
 }
 
 .page-links {
@@ -3886,7 +3892,8 @@ embed, iframe, object {
   display: block;
 }
 
-.navigation.post-navigation {}
+.navigation.post-navigation {
+}
 
 .nav-links {
   background: #F8F8F8;
@@ -4418,16 +4425,20 @@ a {
     a {
       width: 200px;
     }
-    li {}
+    li {
+    }
   }
   li {
-    &:hover > a, &.focus > a {}
+    &:hover > a, &.focus > a {
+    }
   }
   ul {
     ul {
-      :hover > a, .focus > a {}
+      :hover > a, .focus > a {
+      }
       a {
-        &:hover, &.focus {}
+        &:hover, &.focus {
+        }
       }
     }
     li {
@@ -4441,7 +4452,8 @@ a {
       }
     }
   }
-  .current_page_item > a, .current-menu-item > a, .current_page_ancestor > a {}
+  .current_page_item > a, .current-menu-item > a, .current_page_ancestor > a {
+  }
 }
 
 .navbar-custom .nav {
@@ -4677,7 +4689,8 @@ p.excerpt {
   padding: 10px 0;
   position: relative;
   width: 100%;
-  span {}
+  span {
+  }
 }
 
 .page-links {
@@ -4822,7 +4835,8 @@ embed, iframe, object {
   display: block;
 }
 
-.navigation.post-navigation {}
+.navigation.post-navigation {
+}
 
 .nav-links {
   background: #F8F8F8;
@@ -4922,6 +4936,16 @@ a.list-group-item .list-group-item-heading {
 }
 
 .occupation {
-  margin-left: 10px;
-  list-style-type: square;
+  margin-left: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.occupation li {
+  margin-bottom: 10px;
+}
+
+.occupation span.time {
+  display: block;
+  font-size: 14px;
 }
