@@ -10,7 +10,9 @@ var concat = require('gulp-concat'),
     pngquant = require('imagemin-pngquant'),
     minifyInline = require('gulp-minify-inline'),
     watch = require('gulp-watch'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    purgecss = require('gulp-purgecss');
+
 
 var paths = {
     css: [
@@ -22,6 +24,7 @@ var paths = {
     ],
     js: ['./src/js/jquery.js',
         './src/js/bootstrap.js',
+        './src/js/lazysizes.min.js',
         './src/js/jquery.easing.min.js',
         './src/js/jquery.fittext.js',
         './src/js/wow.min.js',
@@ -51,6 +54,8 @@ gulp.task('css', function () {
         .pipe(autoprefix('> 1%'))
         .pipe(minifyCSS({
             keepSpecialComments: 0
+        })).pipe(purgecss({
+            content: ['src/*.html']
         }))
         .pipe(gulp.dest('./css/'));
 
