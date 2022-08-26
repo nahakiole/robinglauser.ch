@@ -17,19 +17,13 @@ var concat = require('gulp-concat'),
 var paths = {
     css: [
         './src/font-awesome/css/font-awesome.css',
-        './src/css/animate.min.css',
         './src/css/bootstrap.css',
         './src/css/devicons.css',
         './src/css/style.scss'
     ],
-    js: ['./src/js/jquery.js',
-        './src/js/bootstrap.js',
+    js: [
+        './src/js/jquery.js',
         './src/js/lazysizes.min.js',
-        './src/js/jquery.easing.min.js',
-        './src/js/jquery.fittext.js',
-        './src/js/wow.min.js',
-        './src/js/classie.js',
-        './src/js/github-stars.js',
         './src/js/creative.js'
     ],
     html: './src/index.html'
