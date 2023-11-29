@@ -13,7 +13,7 @@
         $('.navbar-collapse').toggleClass('collapse');
     });
 
-    $.getJSON( "/test.json", function( data ) {
+    $.getJSON( "/feed", function( data ) {
         var items = [];
         $.each( data, function( key, val ) {
             items.push( '<div class="col-md-6 col-sm-6"> <h3><a href="'+val.link+'" target="_blank">'+val.title+'</a></h3> <p> '+
