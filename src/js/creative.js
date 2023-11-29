@@ -13,10 +13,14 @@
         $('.navbar-collapse').toggleClass('collapse');
     });
 
-    $.getJSON( "/feed", function( data ) {
+    $.getJSON( "/test.json", function( data ) {
         var items = [];
         $.each( data, function( key, val ) {
-            items.push( '<div class="col-md-6 col-sm-6"> <h3><a href="'+val.link+'" target="_blank">'+val.title+'</a></h3> <p> '+val.summary+'</p> <a href="'+val.link+'" target="_blank">Read article</a> </div>' );
+            items.push( '<div class="col-md-6 col-sm-6"> <h3><a href="'+val.link+'" target="_blank">'+val.title+'</a></h3> <p> '+
+                // only show the first 100 characters of the summary
+                val.summary.substring(0,120).trim()+'...'
+
+                +'</p> <a href="'+val.link+'" target="_blank">Read article</a> </div>' );
         });
         $( ".blog-feed" ).append(items.join( "" ));
     });
