@@ -14,7 +14,7 @@ $app->get(
 });
 
 $app->get(
-    '/blogfeed', function (Request $request) use ($app) {
+    '/latestposts', function (Request $request) use ($app) {
 
     $cacheTime = 3600;
     $cacheFile = __DIR__ . '/cache/rss.xml';

@@ -11,7 +11,7 @@ RewriteCond %{HTTP_HOST} !(www.robinglauser.ch|localhost)$ [NC]
 RewriteRule ^(.*)$ https://www.robinglauser.ch/$1 [L,R=301]
 RewriteRule ^send /app.php
 RewriteRule ^captcha /app.php
-RewriteRule ^blogfeed /app.php
+RewriteRule ^latestposts /app.php
 
 <IfModule mod_rewrite.c>
      RewriteEngine On
