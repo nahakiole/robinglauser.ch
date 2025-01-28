@@ -4,25 +4,27 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-(function($) {
-    "use strict"; // Start of use strict
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
+(function ($) {
 
 
-    $('.navbar-toggle').bind('click', function(event) {
+    $('.navbar-toggle').bind('click', function (event) {
         $('.navbar-collapse').toggleClass('collapse');
     });
 
-    $.getJSON( "/latestposts", function( data ) {
-        var items = [];
-        $.each( data, function( key, val ) {
-            items.push( '<div class="col-md-6 col-sm-6"> <h3><a href="'+val.link+'" target="_blank">'+val.title+'</a></h3> <p> '+
-                // only show the first 100 characters of the summary
-                val.summary.substring(0,120).trim()+'...'
+    fetch("/latestposts", {
+        method: "GET",
+        referrerPolicy: "no-referrer"
+    })
+        .then(function(response) { return response.json() })
+        .then(function(data) {
 
-                +'</p> <a href="'+val.link+'" target="_blank">Read article</a> </div>' );
+            var items = [];
+            $.each(data, function (key, val) {
+                items.push('<div class="col-md-6 col-sm-6"> <h3><a href="' + val.link + '" target="_blank">' + val.title + '</a></h3> <p> ' +
+                   val.summary.substring(0, 120).trim() + '...'
+                    + '</p> <a href="' + val.link + '" target="_blank">Read article</a> </div>');
+            });
+            $(".blog-feed").append(items.join(""));
         });
-        $( ".blog-feed" ).append(items.join( "" ));
-    });
 
 })(jQuery); // End of use strict
